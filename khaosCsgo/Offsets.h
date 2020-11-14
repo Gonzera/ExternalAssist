@@ -22,7 +22,8 @@ public:
 	uintptr_t m_viewPunchAngle = 0x3020;
 	uintptr_t m_iTeamNum = 0xF4;
 	uintptr_t m_iHealth = 0x100;
-
+	uintptr_t m_iCrosshairId = 0xB3E4;
+	uintptr_t m_flFlashMaxAlpha = 0xA41C;
 
 
 // ----------------------------

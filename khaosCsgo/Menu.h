@@ -8,6 +8,8 @@ public:
 	void HandleBinds();
 
 private:
+
+
 };
 
 extern CMenu Menu;

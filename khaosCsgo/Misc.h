@@ -7,6 +7,8 @@ class CMisc
 public:
 	void Radar();
 	void BunnyHop();
+	void Triggerbot();
+	void FlashAlpha();
 
 private:
 

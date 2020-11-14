@@ -37,3 +37,32 @@ void CMisc::Radar()
 
 
 }
+
+void CMisc::Triggerbot()
+{
+	int crosshairId = Memory.ReadMem<int>((uintptr_t)LocalPlayer + Offsets.m_iCrosshairId);
+
+	CEntity* Entity = (CEntity*)Memory.ReadMem<uintptr_t>(Offsets.Client + Offsets.dwEntityList + ((crosshairId - 1) * 0x10));
+
+	if (!Entity) 
+		return;
+
+	bool isAlive = Entity->isAlive();
+	bool isEnemy = Entity->isEnemy();
+
+	if (isEnemy && isAlive)
+	{
+		Memory.WriteMem<int>((uintptr_t)LocalPlayer + Offsets.dwForceAttack, 6);
+	}
+
+}
+
+void CMisc::FlashAlpha()
+{
+	float newMax = 0.0f;
+
+	if (true)
+	{
+		Memory.WriteMem<float>((uintptr_t)LocalPlayer + Offsets.m_flFlashMaxAlpha, newMax);
+	}
+}
