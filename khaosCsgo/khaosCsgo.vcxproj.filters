@@ -19,11 +19,11 @@
     <Filter Include="Khaos\Features">
       <UniqueIdentifier>{1da5948a-c14b-4604-8e84-dffbb76b0fb0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Khaos\Utilities">
+      <UniqueIdentifier>{86743ebe-2bba-472c-9cf5-1f99c25af848}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="khaosCsgo.cpp">
-      <Filter>Khaos</Filter>
-    </ClCompile>
     <ClCompile Include="Memory.cpp">
       <Filter>Khaos\Memory</Filter>
     </ClCompile>
@@ -32,6 +32,15 @@
     </ClCompile>
     <ClCompile Include="Misc.cpp">
       <Filter>Khaos\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Khaos\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseEntity.cpp">
+      <Filter>Khaos\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Khaos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -47,8 +56,14 @@
     <ClInclude Include="Misc.h">
       <Filter>Khaos\Features</Filter>
     </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Khaos\Features</Filter>
+    </ClInclude>
     <ClInclude Include="Utils.h">
-      <Filter>Khaos</Filter>
+      <Filter>Khaos\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseEntity.h">
+      <Filter>Khaos\Utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

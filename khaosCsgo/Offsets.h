@@ -14,6 +14,14 @@ public:
 	uintptr_t m_bSpotted = 0x93D;
 	uintptr_t dwForceJump = 0x51FBFA8;
 	uintptr_t m_fFlags = 0x104;
+	uintptr_t dwForceAttack = 0x3183920;
+	uintptr_t dwGlowObjectManager = 0x529A1D0;
+	uintptr_t m_vecOrigin = 0x138;
+	uintptr_t m_vecVelocity = 0x114;
+	uintptr_t m_vecViewOffset = 0x108;
+	uintptr_t m_viewPunchAngle = 0x3020;
+	uintptr_t m_iTeamNum = 0xF4;
+	uintptr_t m_iHealth = 0x100;
 
 
 
