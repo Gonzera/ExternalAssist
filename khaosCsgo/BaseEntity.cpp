@@ -17,6 +17,21 @@ Vector3 CEntity::VecOrigin()
 	return Memory.ReadMem<Vector3>((uintptr_t)this + Offsets.m_vecOrigin);
 }
 
+Vector3 CEntity::GetViewAngle()
+{
+	return Memory.ReadMem<Vector3>(Offsets.Client + Offsets.dwClientState_ViewAngles);
+}
+
+void CEntity::SetViewAngle(Vector3 angle)
+{
+	Memory.WriteMem<Vector3>(Offsets.Client + Offsets.dwClientState_ViewAngles, angle);
+}
+
+uintptr_t CEntity::GetBoneMatrix()
+{
+	return Memory.ReadMem<uintptr_t>((uintptr_t)this + Offsets.m_dwBoneMatrix)
+}
+
 bool CEntity::isDormant()
 {
 	return Memory.ReadMem<bool>((uintptr_t)this + Offsets.m_bDormant);
@@ -61,4 +76,14 @@ bool CEntity::isEnemy()
 BYTE CEntity::m_fFlag()
 {
 	return Memory.ReadMem<BYTE>((uintptr_t)this + Offsets.m_fFlags);
+}
+
+int CEntity::GetClassId()
+{
+	int IClientNetworkable = Memory.ReadMem<int>((uintptr_t)this + 0x8);
+	int GetClientClass = Memory.ReadMem<int>(IClientNetworkable + 0x8);
+	int pClientClass = Memory.ReadMem<int>(GetClientClass + 0x1);
+	int classID = Memory.ReadMem<int>(pClientClass + 0x14);
+
+	return classID;
 }

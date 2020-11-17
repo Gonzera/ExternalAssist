@@ -5,7 +5,8 @@
 #include <TlHelp32.h>
 #include <thread>
 #include <random>
-
+#include <d3d9.h>
+#include <d3dx9.h>     //math shit
 
 #include "Utils.h"
 #include "Offsets.h"
@@ -13,4 +14,5 @@
 #include "Misc.h"
 #include "Menu.h"
 #include "BaseEntity.h"
-
+#include "Glow.h"
+#include "Aimbot.h"

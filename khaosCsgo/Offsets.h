@@ -24,6 +24,10 @@ public:
 	uintptr_t m_iHealth = 0x100;
 	uintptr_t m_iCrosshairId = 0xB3E4;
 	uintptr_t m_flFlashMaxAlpha = 0xA41C;
+	uintptr_t m_iGlowIndex = 0xA438;
+	uintptr_t dwClientState_ViewAngles = 0x4D90;
+	uintptr_t m_aimPunchAngle = 0x302C;
+	uintptr_t m_dwBoneMatrix = 0x26A8;
 
 
 // ----------------------------

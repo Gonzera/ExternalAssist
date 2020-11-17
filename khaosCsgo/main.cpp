@@ -15,6 +15,6 @@ int main()
 
 		Menu.HandleBinds();
 
-		Misc.Radar();
+		Glow.DoGlow();
 	}
 }

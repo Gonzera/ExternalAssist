@@ -18,7 +18,16 @@ public:
 	bool isDormant();
 	Vector3 VecVelocity();
 	Vector3 VecOrigin();
+	Vector3 GetViewAngle();
+	Vector3 GetEyePos();
+	uintptr_t GetBoneMatrix();
+	Matrix3x4_t GetBonePos();
+	void SetViewAngle(Vector3 angle);
 	BYTE m_fFlag();
 };
 
 extern CEntity* LocalPlayer;
+
+typedef struct {
+	float Matrix[3][4];
+} Matrix3x4_t;

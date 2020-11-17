@@ -42,6 +42,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Khaos</Filter>
     </ClCompile>
+    <ClCompile Include="Glow.cpp">
+      <Filter>Khaos\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimbot.cpp">
+      <Filter>Khaos\Features</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Memory.h">
@@ -64,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="BaseEntity.h">
       <Filter>Khaos\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Glow.h">
+      <Filter>Khaos\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimbot.h">
+      <Filter>Khaos\Features</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
