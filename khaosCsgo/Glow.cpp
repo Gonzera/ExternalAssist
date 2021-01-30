@@ -4,14 +4,14 @@ CGlow Glow;
 
 void CGlow::DoGlow()
 {
-	
+
 	uintptr_t glowManager = Memory.ReadMem<uintptr_t>(Offsets.Client + Offsets.dwGlowObjectManager);
 
-	
-	for (int i = 0; i < 64; i++) 
+
+	for (int i = 0; i < 64; i++)
 	{
 		CEntity* Entity = (CEntity*)Memory.ReadMem<uintptr_t>(Offsets.Client + Offsets.dwEntityList + (i * 0x10));
-		if (!Entity) 
+		if (!Entity)
 			return;
 
 		int glowIndex = Memory.ReadMem<int>((uintptr_t)Entity + Offsets.m_iGlowIndex);
@@ -34,3 +34,4 @@ void CGlow::DoGlow()
 		}
 
 	}
+}

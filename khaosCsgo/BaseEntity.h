@@ -9,8 +9,6 @@ public:
 	int GetHealth();
 	int GetTeam();
 	int GetClassId();
-	float GetFlashDuration();
-	float GetFlashMaxAlpha();
 	bool isInGame();
 	bool isSpoted();
 	bool isAlive();
@@ -18,6 +16,7 @@ public:
 	bool isDormant();
 	Vector3 VecVelocity();
 	Vector3 VecOrigin();
+	Vector3 VecPunch();
 	Vector3 GetViewAngle();
 	Vector3 GetEyePos();
 	uintptr_t GetBoneMatrix();

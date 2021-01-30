@@ -16,5 +16,6 @@ int main()
 		Menu.HandleBinds();
 
 		Glow.DoGlow();
+		Misc.Triggerbot();
 	}
 }

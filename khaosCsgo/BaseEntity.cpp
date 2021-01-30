@@ -22,6 +22,11 @@ Vector3 CEntity::GetViewAngle()
 	return Memory.ReadMem<Vector3>(Offsets.Client + Offsets.dwClientState_ViewAngles);
 }
 
+Vector3 CEntity::VecPunch()
+{
+	return Memory.ReadMem<Vector3>(Offsets.Client + Offsets.m_viewPunchAngle);
+}
+
 void CEntity::SetViewAngle(Vector3 angle)
 {
 	Memory.WriteMem<Vector3>(Offsets.Client + Offsets.dwClientState_ViewAngles, angle);
@@ -29,7 +34,7 @@ void CEntity::SetViewAngle(Vector3 angle)
 
 uintptr_t CEntity::GetBoneMatrix()
 {
-	return Memory.ReadMem<uintptr_t>((uintptr_t)this + Offsets.m_dwBoneMatrix)
+	return Memory.ReadMem<uintptr_t>((uintptr_t)this + Offsets.m_dwBoneMatrix);
 }
 
 bool CEntity::isDormant()
@@ -66,6 +71,7 @@ bool CEntity::isEnemy()
 {
 	int entityTeam = this->GetTeam();
 	int myTeam = LocalPlayer->GetTeam();
+	
 
 	if (myTeam != entityTeam)
 		return true;

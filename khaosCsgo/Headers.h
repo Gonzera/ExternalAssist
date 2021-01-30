@@ -6,7 +6,7 @@
 #include <thread>
 #include <random>
 #include <d3d9.h>
-#include <d3dx9.h>     //math shit
+#include <d3dx9.h>     
 
 #include "Utils.h"
 #include "Offsets.h"

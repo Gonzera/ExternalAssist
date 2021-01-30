@@ -1,7 +1,7 @@
 #include "Misc.h"
 CMisc Misc;
 
-void CMisc::BunnyHop() //so to testando se o negocio de memoria realmente funciona.
+void CMisc::BunnyHop() 
 {
 	
 
@@ -52,9 +52,13 @@ void CMisc::Triggerbot()
 
 	if (isEnemy && isAlive)
 	{
-		Memory.WriteMem<int>((uintptr_t)LocalPlayer + Offsets.dwForceAttack, 6);
-	}
+		//Memory.WriteMem<int>((uintptr_t)LocalPlayer + Offsets.dwForceAttack, 6);
+		mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+		Sleep(2);
+		mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 
+	}
+	
 }
 
 void CMisc::FlashAlpha()
