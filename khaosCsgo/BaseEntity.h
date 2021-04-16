@@ -1,6 +1,10 @@
 #pragma once
 #include "Headers.h"
 
+typedef struct {
+	float Matrix[3][4];
+} Matrix3x4_t;
+
 class CEntity
 {
 public:
@@ -27,6 +31,3 @@ public:
 
 extern CEntity* LocalPlayer;
 
-typedef struct {
-	float Matrix[3][4];
-} Matrix3x4_t;

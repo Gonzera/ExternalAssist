@@ -18,7 +18,7 @@ void CGlow::DoGlow()
 		bool isEnemy = Entity->isEnemy();
 		bool isDormant = Entity->isDormant();
 
-		if (!isDormant && isEnemy) //se quiser depois coloca outro if pra glow no team, eu n acho daora mas tu que sabe.
+		if (!isDormant && isEnemy) 
 		{
 			GlowObject_t sGlow = Memory.ReadMem<GlowObject_t>(glowManager + (i * 0x38) + 0x4);
 

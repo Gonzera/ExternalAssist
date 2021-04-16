@@ -52,18 +52,16 @@ void CMisc::Triggerbot()
 
 	if (isEnemy && isAlive)
 	{
-		//Memory.WriteMem<int>((uintptr_t)LocalPlayer + Offsets.dwForceAttack, 6);
 		mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
 		Sleep(2);
 		mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-
 	}
 	
 }
 
 void CMisc::FlashAlpha()
 {
-	float newMax = 0.0f;
+	float newMax = 0.0f; //will add the config file later
 
 	if (true)
 	{

@@ -5,10 +5,7 @@ class CGlow
 {
 public:	
 	void DoGlow();
-
 private:
-
-
 };
 
 extern CGlow Glow;

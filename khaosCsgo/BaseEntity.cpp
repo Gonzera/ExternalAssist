@@ -27,6 +27,7 @@ Vector3 CEntity::VecPunch()
 	return Memory.ReadMem<Vector3>(Offsets.Client + Offsets.m_viewPunchAngle);
 }
 
+
 void CEntity::SetViewAngle(Vector3 angle)
 {
 	Memory.WriteMem<Vector3>(Offsets.Client + Offsets.dwClientState_ViewAngles, angle);

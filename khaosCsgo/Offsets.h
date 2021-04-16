@@ -28,7 +28,6 @@ public:
 	uintptr_t dwClientState_ViewAngles = 0x4D90;
 	uintptr_t m_aimPunchAngle = 0x302C;
 	uintptr_t m_dwBoneMatrix = 0x26A8;
-	uintptr_t m_aimPunchAngle = 0x302C;
 
 
 // ----------------------------
