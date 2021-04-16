@@ -7,15 +7,15 @@
 class COffsets
 {
 public:
-	uintptr_t dwLocalPlayer = 0xD8A2BC;
-	uintptr_t dwClientState = 0x58EFE4;
-	uintptr_t dwEntityList = 0x4DA1F24;
+	uintptr_t dwLocalPlayer = 0xD8C2CC;
+	uintptr_t dwClientState = 0x588FE4;
+	uintptr_t dwEntityList = 0x4DA3F5C;
 	uintptr_t m_bDormant = 0xED;
 	uintptr_t m_bSpotted = 0x93D;
-	uintptr_t dwForceJump = 0x524BE84;
+	uintptr_t dwForceJump = 0x524DEBC;
 	uintptr_t m_fFlags = 0x104;
-	uintptr_t dwForceAttack = 0x31D3460;
-	uintptr_t dwGlowObjectManager = 0x52EA520;
+	uintptr_t dwForceAttack = 0x31D54B4;
+	uintptr_t dwGlowObjectManager = 0x52EC550;
 	uintptr_t m_vecOrigin = 0x138;
 	uintptr_t m_vecVelocity = 0x114;
 	uintptr_t m_vecViewOffset = 0x108;
