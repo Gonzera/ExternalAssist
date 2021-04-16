@@ -10,6 +10,10 @@ void CMisc::BunnyHop()
 	Vector3 velocity = LocalPlayer->VecVelocity(); 
 
 
+	INPUT input;
+
+
+
 	if (GetAsyncKeyState(VK_SPACE) && m_fFlags)
 	{
    		Memory.WriteMem<int>(Offsets.Client + Offsets.dwForceJump, 6);

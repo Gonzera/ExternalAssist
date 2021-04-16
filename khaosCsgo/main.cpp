@@ -15,7 +15,22 @@ int main()
 
 		Menu.HandleBinds();
 
-		Glow.DoGlow();
-		Misc.Triggerbot();
 	}
 }
+
+
+/*
+	TODO LIST:
+
+	SAVE CPU USAGE!!!!
+	INI PARSING
+	MOUSE_EVENT AIMBOT
+	RCS
+	VIS CHECK (MAYBE BSP PARSING)
+
+
+
+	EXTREME LOW PRIORITY:
+	DX OVERLAY AND ESP
+
+*/

@@ -2,7 +2,6 @@
 
 #include "Headers.h"
 
-//salve ichigo baixa isso daq https://github.com/frk1/hazedumper
 
 class COffsets
 {
